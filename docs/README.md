@@ -1,110 +1,103 @@
 # Pantry Pal
 ### Grocery Expiration Tracking and Food Waste Management Application
 
+**Team:** 5 Idiots | **Group:** Group 2 | **Course:** Introduction to Software Engineering (M3 Final Prototype + Demo)
+
 ## 1. Project Overview
 
-Pantry Pal is a grocery expiration tracking and food waste management application developed to help users manage their groceries more efficiently and reduce unnecessary food waste.
+Pantry Pal is a grocery expiration tracking and food waste management app that helps users organise their groceries, see what is about to expire, and use food before it is wasted.
 
-The application allows users to record and organise grocery items, monitor expiration dates, receive expiration reminders, and keep track of expired grocery history. It also provides Premium features that offer additional convenience and customisation.
-
-Our goal is to help users become more aware of their grocery consumption, manage food inventory effectively, and minimise food waste through an accessible and user-friendly application.
+Users record grocery items, get expiration reminders, check a calendar of expiry dates, and review their expired-item history. Premium users also get receipt scanning, automatic category detection, custom reminder periods, extended history, and a usage summary.
 
 ## 2. Project Objectives
 
 - Help users organise and manage their grocery items.
-- Track grocery expiration dates and reduce forgotten food items.
+- Track expiration dates so food is not forgotten.
 - Provide timely expiration reminders and notifications.
-- Improve grocery management through calendar and inventory features.
-- Reduce household food waste through better food management.
-- Provide additional grocery management capabilities through Premium features.
+- Show expiry dates clearly through a pantry list and a calendar view.
+- Help users understand their habits through a used-vs-wasted usage summary (Premium).
+- Reduce household food waste.
 
-## 3. Main Features
+## 3. Clickable Prototype: Screens
 
-Pantry Pal includes the following functional requirements:
+The prototype is a clickable web app with four main areas in the bottom navigation:
 
-| ID | Feature | Description |
-|---|---|---|
-| FR-1 | Account Management and Premium Upgrade | Manage user accounts and access Premium subscriptions. |
-| FR-2 | Grocery Item Management | Add, edit, delete, and mark grocery items as used. |
-| FR-3 | Automatic Expiration Estimation | Automatically estimate expiration dates for grocery items. |
-| FR-4 | Expiration Reminders | Notify users about upcoming grocery expiration dates. |
-| FR-5 | Active Grocery Items | Display currently active grocery items. |
-| FR-6 | Expiring and Expired Items | Display grocery items that are approaching or have passed their expiration dates. |
-| FR-7 | Receipt and Item Scanning | Provide scanning functionality for Premium users. |
-| FR-8 | Automatic Category Detection | Automatically detect grocery item categories. |
-| FR-9 | Custom Reminder Settings | Allow Premium users to customise reminder periods. |
-| FR-10 | Expired Grocery History | Maintain records of expired grocery items. |
+| Screen | What it does |
+|---|---|
+| **Login / Sign up** | Email and password login (with show/hide password). Accounts persist when the user logs in again. |
+| **Pantry** | List of grocery items. Add, edit, delete and mark items as used. Filter tabs for Active, Expiring and Expired items. |
+| **Calendar** | Month view of expiry dates, with a month picker to jump between months. |
+| **Notifications** | Upcoming and overdue expiration reminders. |
+| **Profile** | Account details, Free/Premium status, Premium upgrade, reminder settings, and the usage summary and history for Premium users. |
 
-## 4. Free and Premium Features
+Other behaviour in the prototype: undo toast after deleting or marking an item, category icons on items, and a receipt scan flow with a review list before items are saved (Premium).
 
-Pantry Pal provides different levels of functionality for Free and Premium users.
+## 4. Functional Requirements and Where to Find Them (Golden Thread)
+
+| ID | Feature | Description | Prototype screen |
+|---|---|---|---|
+| FR-1 | Account Management and Premium Upgrade | Manage user accounts and access Premium subscriptions. | Login / Sign up, Profile |
+| FR-2 | Grocery Item Management | Add, edit, delete, and mark grocery items as used. | Pantry |
+| FR-3 | Automatic Expiration Estimation | Automatically estimate expiration dates for grocery items. | Pantry (Add item) |
+| FR-4 | Expiration Reminders | Notify users about upcoming expiration dates. | Notifications |
+| FR-5 | Active Grocery Items | Display currently active grocery items. | Pantry (Active tab) |
+| FR-6 | Expiring and Expired Items | Display items that are close to or past their expiration date. | Pantry (Expiring / Expired tabs), Calendar |
+| FR-7 | Receipt and Item Scanning | Scan receipts and items to add groceries (Premium). | Pantry (Scan receipt), review list |
+| FR-8 | Automatic Category Detection | Automatically detect grocery item categories (Premium). | Pantry (Add item / Scan) |
+| FR-9 | Custom Reminder Settings | Let Premium users set the reminder period (1 to 30 days). | Profile (Reminder settings) |
+| FR-10 | Expired Grocery History | Keep records of expired grocery items. | Profile / Pantry (History) |
+| FR-11 | Premium Usage Summary | Daily, weekly and monthly summary of groceries used and wasted (Premium). | Profile (Usage summary) |
+
+## 5. Free and Premium Features
 
 ### Free Users
-- Access basic grocery management features.
-- Add, edit, delete, and manage grocery items.
-- Receive expiration reminders with a default 3-day reminder period.
-- Access expired grocery history for 7 days.
+- Add, edit, delete and manage grocery items.
+- Expiration reminders with the default 3-day reminder period.
+- Expired grocery history for 7 days.
 
 ### Premium Users
-- Access additional Premium features.
-- Customise grocery expiration reminder periods.
-- Access expired grocery history without the 7-day limitation while the subscription is active.
-- Use receipt and grocery item scanning functionality.
+- Receipt and grocery item scanning with a review list before saving.
+- Automatic category detection.
+- Custom reminder periods (1 to 30 days).
+- Expired grocery history without the 7-day limit while the subscription is active.
+- Usage summary (daily, weekly, monthly) of groceries used and wasted.
 
-## 5. Development Methodology
+## 6. Development Methodology
 
-Our team follows the Agile Software Development Life Cycle (SDLC).
+We follow the Agile SDLC with short iterations:
 
-The project is developed through an iterative approach involving:
-- Requirements gathering and analysis.
-- System design and prototyping.
-- Implementation and development.
-- Testing and evaluation.
-- Continuous improvements based on feedback.
+- Requirements gathering and analysis (M1 Team Charter, M2 SRS).
+- System design and diagrams.
+- Prototype building, review and feedback.
+- Testing and continuous improvement.
 
-This approach allows our team to review and improve the application throughout the development process.
+## 7. Technologies Used
 
-## 6. Technologies Used
+- **Readdy**: AI web-app builder used to design and generate the clickable prototype screens.
+- **Local device storage**: prototype data (accounts and pantry items) is stored on the device in this version.
+- **Hatchable**: hosting for the live prototype.
+- **GitHub**: version control, collaboration, and project documents.
+- **Planned (future work)**: Supabase / Readdy Backend for cloud accounts, per-user data, and an AI-vision receipt extraction function.
 
-The current prototype uses:
+## 8. How to Access the Prototype
 
-- **HTML** – Structures the application interface.
-- **CSS** – Provides styling and visual design.
-- **JavaScript** – Implements application interactions and functionality.
-- **GitHub** – Version control and project collaboration.
-- **GitHub Pages** – Hosting the web prototype, if deployment is enabled.
-
-## 7. How to Access the Prototype
-
-### Option 1: Online Access
-
-GitHub Pages prototype:
-
-https://dora7258.github.io/Pantry-Pal/
+### Option 1: Online
+Live prototype: **[add your live prototype link here]**
 
 ### Option 2: Run Locally
-
 1. Clone or download this repository.
 2. Open the project folder.
-3. Locate `index.html`.
-4. Open `index.html` using a web browser.
-5. Explore the Pantry Pal application.
+3. Open `index.html` in a web browser.
+4. Sign up with any email and password, then explore the Pantry, Calendar, Notifications and Profile screens.
 
-The main prototype files are:
-
-- `index.html`
-- `style.css`
-- `app.js`
-
-## 8. Project Repository Structure
+## 9. Repository Structure
 
 ```text
 Pantry-Pal/
 │
 ├── README.md
-├── index.html
-├── style.css
-├── app.js
+├── index.html            (prototype entry point)
+├── ...                   (other prototype source files)
 │
 ├── docs/
 │   ├── team-charter.pdf
@@ -122,35 +115,34 @@ Pantry-Pal/
     └── demo-slides.pdf
 ```
 
-## 9. Team Information
+## 10. Use of AI (AI-First Process)
 
-**Team Name:** 5 Idiots  
+We used AI tools throughout the project: **Claude** for writing and refining requirements, documents and prompts, and **Readdy** to generate and adjust the prototype screens. We reviewed and edited all AI output ourselves. The full details are in [`docs/ai-use-statement.md`](docs/ai-use-statement.md).
+
+## 11. Team Information
+
+**Team Name:** 5 Idiots
 **Group:** Group 2
 
-### Team Members
+| Member | Student ID |
+|---|---|
+| Than Htet Linn | 6931503017 |
+| Lian Thawn Khai | 6931503009 |
+| Thu Ta | 6931503019 |
+| Myat Mon Su | 6931503094 |
+| Thin Thazin | 6931503018 |
 
-Than Htet Linn     6931503017
-Lian Thawn Khai    6931503009
-Thu Ta             6931503019
-Myat Mon Su        6931503094
-Thin Thazin        6931503018
+## 12. Project Documentation
 
-
-## 10. Project Documentation
-
-The project documentation includes:
-
-- M1 – Team Charter
-- M2 – Software Requirements Specification (SRS)
-- System Design and Diagrams
-- Final Project Report
+- M1: Team Charter
+- M2: Software Requirements Specification (SRS)
+- System design and diagrams (`docs/design/`)
+- Final project report
 - AI-Use Statement
-- Project Demonstration Slides
+- Demo slides
 
-## 11. Project Purpose
+## 13. Project Purpose
 
-Pantry Pal aims to encourage responsible grocery management and help users reduce avoidable food waste.
+Pantry Pal encourages responsible grocery management and helps users reduce avoidable food waste by combining inventory tracking, expiry reminders, a calendar view, and Premium insights.
 
-By combining grocery inventory management, expiration tracking, reminders, and additional Premium features, the application provides a convenient approach to managing household groceries.
-
-**Developed by Group-2__5 Idiots**
+**Developed by Group 2, 5 Idiots**

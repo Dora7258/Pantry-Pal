@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pantry Pal</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+<!-- AUTH -->
+<section id="auth" class="auth">
+  <div class="logo" style="margin:0 auto 8px">🧺</div>
+  <h1>Pantry Pal</h1>
+  <p class="sub">Keep track of your groceries &amp; beat food waste</p>
+  <div class="card"><form id="authForm">
+    <div class="seg" id="authSeg"><button type="button" class="on" data-m="in">Sign in</button><button type="button" data-m="up">Create account</button></div>
+    <div id="nameRow" class="hide"><label for="aName">Your name</label><input id="aName" placeholder="e.g. Sam"></div>
+    <label for="aMail">Email</label><input id="aMail" type="email" required placeholder="you@example.com">
+    <label for="aPass">Password</label><input id="aPass" type="password" required minlength="6" placeholder="At least 6 characters">
+    <p id="authErr" style="color:var(--red);margin:8px 0 0"></p>
+    <button class="btn" style="margin-top:14px" id="authBtn">Sign in</button>
+  </form></div>
+</section>
+
+<!-- APP -->
+<section id="app" class="card hide" style="overflow:visible">
+  <div class="hdr">
+    <div class="logo">🧺</div>
+    <div class="icons">
+      <button id="bell" aria-label="Notifications">🔔<span class="dot hide" id="bellDot"></span></button>
+      <button id="prof" aria-label="Profile">👤</button>
+      <div class="pop" id="notifPop"></div>
+      <div class="pop" id="profPop"></div>
+    </div>
+  </div>
+  <nav class="tabs" id="tabs">
+    <button data-v="pantry" class="on"><span>🧺</span>Pantry</button>
+    <button data-v="calendar"><span>📅</span>Calendar</button>
+    <button data-v="reminders"><span>🔔</span>Reminders</button>
+  </nav>
+  <main>
+    <div id="v-pantry">
+      <h1>My Pantry</h1>
+      <p class="sub" id="count"></p>
+      <div class="row">
+        <button class="btn" id="addBtn">＋ Add Item</button>
+        <button class="btn alt" id="scanBtn" style="flex:.8">📷 Scan<span class="pro">PRO</span></button>
+      </div>
+      <div class="filters" id="filters"></div>
+      <div id="list"></div>
+    </div>
+    <div id="v-calendar" class="hide">
+      <div class="mnav"><button id="pm" class="btn alt" style="width:auto;padding:6px 14px">‹</button><h2 id="mTitle"></h2><button id="nm" class="btn alt" style="width:auto;padding:6px 14px">›</button></div>
+      <div class="cal" id="cal"></div>
+    </div>
+    <div id="v-reminders" class="hide"><h1>Reminders</h1><p class="sub">Items that need attention soon.</p><div id="remList"></div></div>
+  </main>
+</section>
+</div>
+
+<!-- ADD / EDIT -->
+<div class="modal" id="addM"><div class="sheet">
+  <h2><span id="addTitle">Add to pantry</span><button id="closeAdd" aria-label="Close">✕</button></h2>
+  <label for="fName" style="margin-top:0">Item name *</label><input id="fName" placeholder="e.g. Tomatoes, Milk, Bread...">
+  <label>Category</label><div class="chips" id="cats"></div>
+  <div class="row"><div><label for="fQty">Quantity</label><input id="fQty" type="number" min="0" placeholder="e.g. 2"></div>
+  <div><label for="fUnit">Unit</label><select id="fUnit"><option value="">None</option><option>pack</option><option>dozen</option><option>kg</option><option>g</option><option>L</option><option>ml</option><option>can</option><option>bottle</option></select></div></div>
+  <div class="row"><div><label for="fBuy">Purchase date</label><input id="fBuy" type="date"></div>
+  <div><label for="fExp">Expiry date *</label><input id="fExp" type="date"></div></div>
+  <label>Remind me</label>
+  <div class="seg" id="rem"><button type="button" data-d="1">1 day before</button><button type="button" data-d="3" class="on">3 days before</button><button type="button" data-d="7">7 days before</button></div>
+  <label for="fNote">Notes</label><textarea id="fNote" placeholder="Anything to remember..."></textarea>
+  <p id="addErr" style="color:var(--red);margin:8px 0 0"></p>
+  <div class="row" style="margin-top:14px"><button class="btn alt" id="cancelAdd">Cancel</button><button class="btn" id="saveItem">Add item</button></div>
+</div></div>
+
+<!-- SCAN -->
+<div class="modal" id="scanM"><div class="sheet">
+  <h2><span>Scan a product</span><button id="closeScan" aria-label="Close">✕</button></h2>
+  <video id="vid" playsinline muted></video>
+  <p class="sub" id="scanMsg">Point your camera at a barcode.</p>
+  <div class="row"><button class="btn alt" id="photoBtn">Use a photo</button><button class="btn alt" id="manualBtn">Type barcode</button></div>
+  <input type="file" id="photo" accept="image/*" capture="environment" class="hide">
+  <div id="manualRow" class="hide" style="margin-top:10px"><label for="code">Barcode number</label><input id="code" inputmode="numeric" placeholder="e.g. 5449000000996"><button class="btn" id="useCode" style="margin-top:10px">Look up</button></div>
+</div></div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

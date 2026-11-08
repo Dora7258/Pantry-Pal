@@ -1,8 +1,5 @@
 (function(){
-// ---------- SETTINGS ----------
-// Leave SERVER empty to run completely in your browser (accounts and groceries are saved on this device).
-// To use real server accounts instead, put the address of your Hatchable project here, for example:
-// var SERVER="https://pantry-pal-07y9.hatchable.site";
+
 var SERVER="";
 
 // ---------- Built-in "local server" (used when SERVER is empty) ----------

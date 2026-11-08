@@ -106,11 +106,7 @@ Pantry-Pal/
 │   ├── ai-use-statement.md
 │   │
 │   └── design/
-│       ├── system-architecture.png
-│       ├── use-case-diagram.png
-│       ├── sequence-diagram.png
-│       └── data-model.png
-│
+│       └── use-case-diagram.png
 └── slides/
     └── demo-slides.pdf
 ```

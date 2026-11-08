@@ -99,7 +99,7 @@ Pantry-Pal/
 │     ├── M1-Charter.pdf
 │     ├── M2_SRS.pdf
 │     ├── README.md
-│     ├── final-report.pdf
+│     ├── Pantry Pal-Final Report.pdf
 │     ├── ai-use-statement.md 
 │     ├── Golden_Thread.pdf
 │     │

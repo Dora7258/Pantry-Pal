@@ -21,13 +21,20 @@ GATE 1 — REACHABLE USERS
 3. [Cindy] — Household grocery shopper — Friend / neighbor — [1,9,2026]
    
 GATE 2 — MVP SHAPE 
+
 FR-1 — Create / edit / delete account 
+
 FR-2  — Add / edit / delete grocery items 
+
 FR-3 — Expiration date reminders / notifications 
+
 FR-4 — Display active Items 
+
 FR-5 — Show items that expire soon and already expired  
+
 FR with a real rule/decision: 
 FR-3 —  The system shall calculate and display the remaining days before expiration. 
+
 Data that must persist: 
 User information, grocery information, expiration dates, item status, and reminder settings. 
 

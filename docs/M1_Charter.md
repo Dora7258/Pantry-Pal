@@ -15,7 +15,6 @@ Gate 1 — Reachable Users
 2. [Hanna] — Working adult — Family friend / neighbor — [3/9/2026]
 3. [Cindy] — Household grocery shopper — Friend / neighbor — [1/9/2026]
 
-
 | ID | Functional Requirement | Description |
 |---|---|---|
 | FR-1 | Account & Premium | Users can register, log in, and access Free or Premium features. |
@@ -39,6 +38,8 @@ FR-11: Premium users can view daily, weekly, and monthly usage summaries. The mo
 
 Data that must persist:
 User accounts, grocery details, expiration dates, item status, reminders, subscriptions, scan usage, expired history, and usage summaries. 
+
 Gate 3 — Access:
 Required resources include databases, date/time functions, notification systems, receipt/OCR services, development tools, APIs, and third-party libraries. The team will check availability and licensing before use.
+
 PROCESS & TEAM  Chosen SDLC: Agile — Develop the system in short iterations, test with users, and improve based on feedback. Start with grocery tracking and expiration alerts, then add advanced features gradually. 

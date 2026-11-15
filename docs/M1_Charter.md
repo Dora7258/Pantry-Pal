@@ -39,9 +39,12 @@ GATE 2 — MVP SHAPE
 FR with a real rule/decision: 
 FR-3 — The system shall calculate and display the estimated expiration date based on the grocery 
 category and purchased date. 
+
 FR-7 — Premium users can scan unlimited receipts. 
+
 FR-10 — Free users can view expired grocery history for 7 days; Premium users can view unlimited 
 history. 
+
 FR-11: Premium users can view daily, weekly, and monthly usage summaries. The monthly summary 
 resets at the end of each month. 
 

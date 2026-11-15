@@ -90,45 +90,28 @@ Live prototype:  [https://dora7258.github.io/Pantry-Pal/prototype](https://dora7
 4. Sign up with any email and password, then explore the Pantry, Calendar, Notifications and Profile screens.
 
 ## 9. Repository Structure
-
+```text
 Pantry-Pal/
-│
 ├── README.md
-│
 ├── docs/
-│     ├── M1-Charter.pdf
-│     ├── M2_SRS.pdf
-│     ├── README.md
-│     ├── Pantry Pal-Final Report.pdf
-│     ├── ai-use-statement.md 
-│     ├── Golden_Thread.pdf
-│     │
-│     ├── design/
-│     │    ├── use-case-diagram.pdf
-│     │    └── PantryPal-SequenceDiagram.pdf
-│     │ 
-│     └── old_docs/
-│          ├── README_ver1.0.md
-│          ├── M1-Charter_ver1.0.pdf
-│          ├── M2_SRS_ver1.0.pdf
-│          ├── M1-Charter_ver1.0.1.pdf
-│          ├── M2_SRS_ver1.0.1.pdf
-│          └── Pantry Pal_demo.slides_ver1.0.pdf 
-│  
-│
+│   ├── design/
+│   │   ├── Pantry_Pal_Architecture_Diagram...
+│   │   ├── Pantry_Pal_UseCase_Diagram...
+│   │   └── pantry_pal_sequence_diagram...
+│   ├── AI_Usage_Statement.md
+│   ├── Golden_Tread.md
+│   ├── M1_Charter.md
+│   ├── M2_SRS.md
+│   └── Pantry Pal - FinalReport.md
 ├── prototype/
-│     ├── index.html
-│     ├── style.css
-│     ├── script.js
-│     │
-│     └── old prototype/
-│          ├── index_ver1.0.html
-│          ├── style_ver1.0..css
-│          └── script_ver1.0.js  
-│    
-│    
-└──  slide/
-│     └── PantryPal_demo.slides.pdf 
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
+└── slide/
+    ├── Pantry Pal Demo.pdf
+    └── PantryPal-Demo.Slide.pdf
+```
+    
 ## 10. Use of AI (AI-after_draft Process)
 
 We used AI tools throughout the project: Claude for writing and refining requirements, documents and prompts, and Readdy to generate and adjust the prototype screens. We reviewed and edited all AI output ourselves. The full details are in [`docs/ai-use-statement.md`](docs/ai-use-statement.md).
@@ -137,7 +120,7 @@ We used AI tools throughout the project: Claude for writing and refining require
 
 Team Name: 5 Idiots
 Group: Group 2
-
+```text
 | Member | Student ID | Github 
 |---|---|
 | Than Htet Linn | 6931503017 |[ThanHtetLinn](https://github.com/ThanHtetLinn)
@@ -145,7 +128,7 @@ Group: Group 2
 | Thu Ta | 6931503019 |[https://github.com/yolo062](https://github.com/yolo062)
 | Myat Mon Su | 6931503094 |[https://github.com/Dora7258](https://github.com/Dora7258)
 | Thin Thazin | 6931503018 |[https://github.com](https://github.com/Thin-Thazin783)
-
+```
 ## 12. Project Documentation
 
 - M1: Team Charter
